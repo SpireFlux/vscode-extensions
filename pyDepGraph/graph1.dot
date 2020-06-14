@@ -1,0 +1,35 @@
+digraph L {
+
+  node [shape=record fontname=Arial];
+
+  a  [label="Main"]
+  b  [label="math.h"]
+  c  [label="stdio.h"]
+  d  [label="cars.c"]
+  e  [label="math.h"]
+  f  [label="stdio.h"]
+  g  [label="cars.c"]
+  h  [label="math.h"]
+  i  [label="stdio.h"]
+  j  [label="cars.c"]
+  k  [label="math.h"]
+  l  [label="stdio.h"]
+  m  [label="cars.c"]
+
+
+  m1  [label="vans.c"]
+  m2  [label="geometry.h"]
+  m3  [label="stdio.h"]
+  m4 [label="motorcycles.c"]
+  m5 [label="trucks.c"]
+
+
+
+  a -> {b c d e f g h i j k l m};
+  m -> {m1 m2 m3 m4};
+  l -> {m5};
+
+
+dot -Tsvg graph1 -o hello_world.svg
+
+}
